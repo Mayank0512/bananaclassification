@@ -31,7 +31,7 @@ def predict():
         f = request.files['file']
         
         # Save file to /uploads 
-        basepath = os.path.abspath(__file__)
+        basepath =  os.path.dirname(__file__)
         file_path = os.path.join(
             basepath, secure_filename(f.filename))
         f.save(file_path)
