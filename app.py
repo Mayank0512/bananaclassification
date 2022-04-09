@@ -12,8 +12,8 @@ model =  keras.models.load_model('model.h5')
 class_names=['Green', 'Midripen', 'Overripen', 'Yellowish_Green']
 
 def model_predict(img_path, model):
-    img = tf.keras.utils.load_img(img_path, target_size=(180, 180))
-    img_array = tf.keras.utils.img_to_array(img)
+    img = tf.keras.preprocessing.image.load_img(img_path, target_size=(180, 180))
+    img_array = tf.keras.preprocessing.image.img_to_array(img)
     img_array = tf.expand_dims(img_array, 0)
     predictions = model.predict(img_array)
     preds = tf.nn.softmax(predictions[0])
