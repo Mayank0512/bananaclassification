@@ -4,3 +4,4 @@ tensorflow==2.3.0
 werkzeug
 gevent
 gunicorn
+pillow
