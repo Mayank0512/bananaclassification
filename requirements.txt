@@ -4,7 +4,7 @@ numpy
 scipy
 matplotlib
 pandas
-tensorflow
+tensorflow==1.13.1
 werkzeug
 gevent
 gunicorn
