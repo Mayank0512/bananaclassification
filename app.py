@@ -3,12 +3,10 @@ from flask import Flask, request, jsonify, render_template
 from werkzeug.utils import secure_filename
 from gevent.pywsgi import WSGIServer
 import tensorflow as tf
-from tensorflow import keras
 import os
-from tensorflow.keras.preprocessing import image
 
 app = Flask(__name__)
-model =  keras.models.load_model('model.h5')
+model = tf.keras.models.load_model('model.h5')
 class_names=['Green', 'Midripen', 'Overripen', 'Yellowish_Green']
 
 def model_predict(img_path, model):
