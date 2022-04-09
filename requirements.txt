@@ -1,0 +1,10 @@
+flask
+jinja2
+numpy
+scipy
+matplotlib
+pandas
+tensorflow
+werkzeug
+gevent
+gunicorn
