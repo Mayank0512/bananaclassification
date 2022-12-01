@@ -1,2 +1,2 @@
 # bananaclassification
-Simple Classification code using TensorFlow to classify bananas and then host it on Heroku
+Code to Classify Banana Images using Tensorflow. The script is hosted on Heroku at https://project-banana-classification.herokuapp.com/
